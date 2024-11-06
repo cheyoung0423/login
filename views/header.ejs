@@ -1,0 +1,40 @@
+
+
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://kit.fontawesome.com/eed617a2fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/response.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+ 
+<header>
+    <div class="header-nav">
+     
+      
+      <div class="top">
+        <h2>ミニチュアフード展示サイト<span class="fa fa-shrimp"></span></h2><br>
+        <p>ログイン：<%= locals.username %>さん</p>
+        <div class="header-right">
+            <% if(locals.isLoggedIn){ %>
+                <li class="one"><a href="/logout">ログアウト</a></li>
+            
+           
+            <% }else{%>
+                <li class="one"><a href="/login">ログイン</a></li>
+            <%}%>
+            <li class="two"><a href="/signup">新規登録</a></li>
+           
+            
+            
+        </div>
+    </div>
+ 
+  </header>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/response.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <div class="sign">
+      <div class="container">
+        <h1>ミニチュアフード展示サイト</h1>
+        <div class="panel1">
+            <h2>新規登録</h2>
+          <% if (errors.length > 0) { %>
+            <ul class="errors">
+              <% errors.forEach(error => { %>
+                <li>・<%= error %></li>
+              <% }); %>
+            </ul>
+          <% } %>
+          <form action="/signup" method="post" >
+            <p>ユーザー名</p>
+            <input type="text" name="username" placeholder="例：花子">
+            <p>メールアドレス</p>
+            <input type="text" name="email" placeholder="例：info@mail.com">
+            <p>パスワード</p>
+            <input type="password" name="password" placeholder=""><br>
+            <input class="log" type="submit" value="登録する"><br>
+            <a href="/">TOPに戻る</a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

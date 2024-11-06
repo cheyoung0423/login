@@ -1,0 +1,209 @@
+@media(min-width: 1267px ){
+a{
+    color:bisque;
+    font-weight:bold;
+}
+.header-right{
+  float:right;
+    display:flex;
+    line-height:150px;
+   
+}
+.header-right li{
+    list-style:none;
+    margin-right:20px;
+   
+   
+
+}
+.one{
+    
+    position:absolute;
+    top:20px;
+    left:1320px;
+}
+.two{
+    position:absolute;
+    top:20px;
+    left:1420px;
+}
+.top{
+    height:150px;
+    background-color:blueviolet;
+    /* 赤色に50%の透明度 */
+background-color:rgba(166, 100, 185, 0.563);
+
+    position:fixed;
+    width:100%;
+    color:bisque;
+
+
+
+
+}
+.top p{
+    border-bottom:3px solid bisque;
+    display: inline-block;
+}
+
+
+.panel{
+width:500px;
+height:550px;
+    background-color: #F6FAFF;
+   padding-top:30px;
+
+   
+    
+
+   
+}
+.sign{
+    display:flex;
+    justify-content: center;
+text-align: center;
+
+
+}
+.log{
+margin:35px 0;
+border-radius:20px;
+width:200px;
+height:30px;
+
+}
+.errors{
+    color:red;
+  border:5px solid red;
+  border-radius:5px;
+ 
+  
+}
+main{
+    padding-top:200px;
+}
+.errors li{
+    list-style:none;
+    margin:5px 0;
+}
+
+.panel1{
+    background-color: #F6FAFF;
+    width:500px;
+height:680px;
+
+padding-top:30px;
+}
+.panel1 h2{
+    padding-top:90px;
+}
+
+.li{
+  
+
+   border:3px,double,black;
+   list-style: none;
+ 
+
+  flex: 1 1 30%; 
+  margin: 57px; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 影を付ける */
+  border-radius: 5px; 
+  
+}
+.list{
+    display: flex; 
+    flex-wrap: wrap; 
+
+}
+.li h2{
+    display: inline-block; 
+    position:absolute;
+  
+}
+
+.sub{
+    border:5px,solid,black;
+    background-color: #F6FAFF;
+   
+    
+
+    width:500px;
+      
+}
+
+.error{
+    color:red;
+    border:1px,solid,red;
+    width:300px;
+    list-style: none;
+   margin:0 auto;
+  margin-top:5px;
+}
+.subm a{
+   
+
+   font-weight:bold;
+   position:absolute;
+   right:50px;
+   bottom:10px;
+ 
+}
+.subm{
+ 
+    position:relative;
+
+    width:100%;
+ 
+    margin-top:160px;
+  
+
+
+}
+.please{
+    color:red;
+}
+a:hover{
+ color:blue;   
+ transition-delay: 0.2s;
+
+}
+.article img{
+   float:left; 
+ 
+   position:absolute;
+   top:220px;
+   left:150px;
+   margin-right:0;
+}
+.arti{
+
+   height:440px;
+  width:700px;
+    position:absolute;
+    top:220px;
+    left:650px;
+    background-color:rgba(255, 255, 255, 0.3);
+padding:30px; 
+}
+ .article a{
+    position:absolute;
+    bottom:30px;
+    right:650px;   
+    font-weight:bold; 
+ }
+
+ body{
+
+
+    
+    background-image:url('../uploads/body.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+
+}

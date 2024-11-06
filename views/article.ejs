@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/response.css">
+    
+  </head>
+  <body>
+    <%-include('header');%>
+  
+    <main>
+     <% if(locals.isLoggedIn){%>
+        <div class="article">
+            <div class="arti">
+              
+            <h1><%= article.title %></h1><br>
+            <p><%= article.content %></p>
+           </div>
+<img src="/<%= article.summary.replace('\\', '/') %>" alt="uploadimage" width="500px" height="500px">
+
+            
+            <a class="btn ub" href="/">TOPに戻る</a>
+        </div>
+      
+        <%}else{%>
+            <div class="sign">
+                <div class="container">
+                    <h2 class="please">※投稿をみるにはログインしてください</h2>
+                 
+                  <div class="panel1">
+                    <h2>ログイン</h2>
+
+                    <form action="/login" method="post">
+                        <p>メールアドレス</p>
+                        <input type="text" name="email" placeholder="例：info@mail.com">
+                        <p>パスワード</p>
+                        <input type="password" name="password"><br>
+                        <input class="log" type="submit" value="ログイン"><br>
+                       
+                      </form>
+                      <div class="return">
+                        <a href="/">TOPに戻る</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            <%}%>
+  
+    </main>
+    <footer>
+   
+    </footer>
+  </body>
+</html>
